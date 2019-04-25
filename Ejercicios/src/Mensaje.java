@@ -1,10 +1,14 @@
-import paquetedos.operacion;
+import paquetedos.Operacion;
 
 import java.util.Scanner;
 
-public class mensaje {
+public class Mensaje {
 
     public static void main(String[] args) {
+        //Declaramos las variables a utilizar
+        String mensaje1 = Operacion.mensaje;
+        String mensaje2 = Operacion.mensaje2;
+
         //Creamos un obj. Scanner que pueda recibir la entrada de teclado
         Scanner entrada = new Scanner(System.in);
 
@@ -20,12 +24,12 @@ public class mensaje {
 
 
         if(calificacion >= 85){
-            System.out.printf("%s %f\n" , operacion.mensaje, calificacion);
+            System.out.printf("%s %f\n" , mensaje1, calificacion);
             //Este mesnaje se importa de otro paquete
         }
 
         if (calificacion_2 >= 85){
-            System.out.printf("%s %f\n" , operacion.mensaje, calificacion_2);
+            System.out.printf("%s %f\n" , mensaje1, calificacion_2);
         }
 
     }
