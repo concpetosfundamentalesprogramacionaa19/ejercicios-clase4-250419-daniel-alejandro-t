@@ -1,5 +1,6 @@
+import paquetedos.operacion;
+
 import java.util.Scanner;
-import Paquete2.*;
 
 public class mensaje {
 
@@ -19,12 +20,12 @@ public class mensaje {
 
 
         if(calificacion >= 85){
-            System.out.printf("%s %f\n" , Mensajes.aprobado, calificacion);
+            System.out.printf("%s %f\n" , operacion.mensaje, calificacion);
             //Este mesnaje se importa de otro paquete
         }
 
         if (calificacion_2 >= 85){
-            System.out.printf("%s %f\n" , Mensajes.aprobado, calificacion_2);
+            System.out.printf("%s %f\n" , operacion.mensaje, calificacion_2);
         }
 
     }
